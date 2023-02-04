@@ -102,6 +102,14 @@ a:active {
   background: #ddd;
   color: black;
 }
+    
+video#backgroundvid {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(some_knob.jpg) no-repeat;
+background-size: cover;
+}
 </style>
 </head>
 <body>
@@ -115,13 +123,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <img src="some_knob.jpg" alt="he / him" width="200" height="200" align="right">
 
-  
-  <video width="100%" id="myVideo" controls autoplay muted loop>
+<video width="100%" id="myVideo" id="backgroundvid" controls autoplay muted loop>
   <source src="energy.webm" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
-   HTML5 video FAILED 
+  Your browser does not support the video tag. - HTML5 video FAILED 
 </video>
 
 <div class="content">  
